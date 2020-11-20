@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "./main.css";
+
+/* body {
+  font-family: system-ui;
+  h1 {
+    color: rebeccapurple;
+    font-size: 25px;
+  }
+} */
