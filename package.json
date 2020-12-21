@@ -2,26 +2,82 @@
   "name": "tailwind-parcel",
   "version": "1.0.0",
   "description": "Sample boilerplate with tailwindcss and parceljs aimed for speedy webpage development.",
-  "main": "index.js",
+  "keywords": [
+    "prettier"
+  ],
+  "main": "src/scripts/index.js",
   "author": "Imam Susanto",
   "license": "MIT",
   "private": true,
   "devDependencies": {
     "cssnano": "^4.1.10",
+    "husky": "^4.3.5",
+    "lint-staged": "^10.5.3",
+    "parcel-plugin-custom-dist-structure": "^1.1.16",
+    "postcss": "^7.0.35",
     "postcss-import": "^12.0.0",
+    "postcss-modules": "^3.2.2",
     "postcss-nested": "^4.2.3",
     "postcss-preset-env": "^6.7.0",
     "postcss-purgecss": "^2.0.3",
-    "pug": "^3.0.0"
+    "postcss-url": "^9.0.0",
+    "prettier": "^2.2.1",
+    "pug": "^3.0.0",
+    "stylelint": "^13.8.0",
+    "stylelint-config-airbnb": "0.0.0",
+    "stylelint-config-idiomatic-order": "^8.1.0",
+    "stylelint-config-prettier": "^8.0.2",
+    "stylelint-config-rational-order": "^0.1.2",
+    "stylelint-declaration-block-no-ignored-properties": "^2.3.0",
+    "stylelint-order": "^4.1.0",
+    "stylelint-prettier": "^1.1.2",
+    "stylelint-scss": "^3.18.0"
   },
   "scripts": {
-    "dev": "parcel serve src/markup/index.pug",
-    "prod": "parcel build src/markup/index.pug",
-    "build:css": "tailwind build ./src/styles/style.css -o ./dist/style.css"
+    "dev": "rimraf dist & parcel serve src/markup/index.pug",
+    "prod": "rimraf dist & parcel build src/markup/index.pug",
+    "build:css": "tailwind build src/styles/styles.css -o dist/style.css",
+    "cwebp": "imagemin src/images/*{'.jpg','.png'} -p.webp.quality=70 -o src/images",
+    "stylelint": "stylelint src/styles/*.css",
+    "stylelint:fix": "stylelint src/styles/*.css --fix"
   },
   "dependencies": {
     "autoprefixer": "^9.8.6",
-    "postcss": "^7.0.35",
+    "browser-sync": "^2.26.13",
+    "imagemin": "^7.0.1",
+    "imagemin-webp": "^6.0.0",
+    "parcel-bundler": "^1.12.4",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.1"
+  },
+  "customDistStructure": {
+    "config": {
+      ".css": "css",
+      ".js": "js",
+      "fonts": [
+        ".eot",
+        ".ttf",
+        ".woff",
+        ".woff2"
+      ],
+      "images": [
+        ".jpg",
+        ".svg",
+        ".png",
+        ".webp"
+      ]
+    },
+    "options": {
+      "development": true
+    }
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.css": [
+      "stylelint --fix"
+    ]
   }
 }

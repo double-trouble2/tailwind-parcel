@@ -1,3 +1,183 @@
 :root {
-  --mainColor: #123456;
+  /* Colors */
+  --bg-color: #d7e9ff;
+  --main-color: #00addd;
+  --secondary-color: #67717b;
+  --tetriary-color: #59a3f5;
+  --dark-color: #393939;
+  --dark-color-2: #67717b;
+  --promo-bg-color: #f0f8ff;
+
+  /* Indents */
+  --section-indent: 160px;
+  --section-mini-indent: 88px;
+
+  /* Fonts for main Title */
+  --raleway-35b: normal 600 35px/41px "Raleway", sans-serif;
+  --raleway-30b: normal 600 30px/49px "Raleway", sans-serif;
+  --raleway-18m-l26: normal 500 18px/26px "Raleway", sans-serif; /* Fonts for H3 title */
+  --raleway-30b: normal 700 30px/35px "Raleway", sans-serif;
+  --raleway-27b: normal 700 27px/39px "Raleway", sans-serif; /* Font for promo title */
+
+  /* Fonts for Adress,Phone-number */
+  --raleway-18l: normal 300 18px/24px "Raleway", sans-serif;
+
+  /* Fonts for descriptions */
+  --raleway-18r: normal 400 18px/26px "Raleway", sans-serif;
+  --raleway-18r-l30: normal 400 18px/30px "Raleway", sans-serif;
+  --raleway-14l: normal 300 14px/20px "Raleway", sans-serif;
+  --raleway-18m-l30: normal 500 18px/30px "Raleway", sans-serif;
+  --raleway-21l: normal 500 21px/25px "Raleway", sans-serif;
+
+  /* Fonts for menu, */
+  --raleway-18m-l21: normal 500 18px/21px "Raleway", sans-serif;
+
+  /* Fonts for buttons */
+  --raleway-22b: normal 600 22px/26px "Raleway", sans-serif;
+
+  /* Font logo name */
+  --montserrat-15m: normal 500 15px/25px "Montserrat", sans-serif;
+
+  /* Other Fonts */
+  --montserrat-31b: normal 700 31px/38px "Montserrat", sans-serif;
+  --ibm-plex: "IBM Plex Sans", sans-serif;
+  --overpass-24l: normal 700 16px/24px "Overpass", sans-serif;
+  --overpass-16l: normal 300 16px/24px "Overpass", sans-serif;
+  --raleway-15m: normal 500 15px/18px "Raleway", sans-serif;
+  --raleway-18sb-l55: normal 600 18px/55px "Raleway", sans-serif;
+  --raleway-18sb-l16: normal 600 18px/16px "Raleway", sans-serif;
+  --roboto-15m: normal 500 15px/2 "Roboto", sans-serif;
+
+  /* --montserrat-12m: normal 500 12px/1.5 'Montserrat', sans-serif;
+  --montserrat-13l: normal 300 13px/1.5 'Montserrat', sans-serif;
+  --montserrat-13b: normal 600 13px/1.5 'Montserrat', sans-serif;
+  --montserrat-14l: normal 300 14px/1.6 'Montserrat', sans-serif;
+  --montserrat-14r: normal 400 14px/23px 'Montserrat', sans-serif;
+  --montserrat-14m: normal 500 14px/1.64 'Montserrat', sans-serif;
+  --montserrat-14sb: normal 600 14px/17px 'Montserrat', sans-serif;
+  --montserrat-15m2: normal 500 15px/1.5 'Montserrat', sans-serif;
+  --montserrat-15b: normal 700 15px/1.64 'Montserrat', sans-serif;
+  --montserrat-16m: normal 500 16px/20px 'Montserrat', sans-serif;
+  --montserrat-16b: normal 600 16px/15px 'Montserrat', sans-serif;
+  --montserrat-17m: normal 500 17px/21px 'Montserrat', sans-serif;
+  --montserrat-21l: normal 300 21px/27px 'Montserrat', sans-serif;
+  --montserrat-25sb: normal 600 25px/55px 'Montserrat', sans-serif;
+  --montserrat-27b: normal 700 27px/35px 'Montserrat', sans-serif;
+  --montserrat-35sb: normal 600 35px/43px 'Montserrat', sans-serif; */
+}
+
+/* .font-IBM {
+  font-family: var(--ibm-plex);
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 19px;
+} */
+
+/* Body */
+body {
+  position: relative;
+  width: 100%;
+  padding: 40px 0 167px;
+  background: var(--bg-color);
+
+  /* Background ellipse */
+  &:before {
+    position: absolute;
+    top: -500px;
+    left: -550px;
+    z-index: 10;
+    width: 1660px;
+    height: 750px;
+    background: #b0c5fd;
+    border-radius: 45%;
+    transform: rotate(-12deg);
+    content: "";
+  }
+}
+
+/* Wrapper */
+.wrap {
+  position: relative;
+  z-index: 100;
+  width: 1500px;
+  height: auto;
+  margin: auto;
+  overflow: hidden;
+  background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.37) 0%,
+      rgba(255, 255, 255, 0) 100%
+    ),
+    linear-gradient(177.09deg, #e8f3ff 1.61%, #ffffff 97.38%);
+  border: 11px solid #fff;
+  border-radius: 33px;
+  box-shadow: 0px 22px 66px rgba(44, 75, 133, 0.2),
+    linear-gradient(177deg, #e8f3ff 1.61%, #fff 97.38%);
+  &:before {
+    position: absolute;
+    top: -100px;
+    left: 42%;
+    display: block;
+    width: 63.9%;
+    height: 690px;
+    margin-left: auto;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 66px;
+    transform: rotate(-15deg);
+    content: "";
+  }
+}
+
+/* Container */
+.container {
+  width: 100%;
+
+  /* padding-right: 1.5rem;
+  padding-left: 1.5rem; */
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.page-section {
+  &--bg-white {
+    background-color: #fff;
+  }
+  &__title {
+    color: var(--dark-color);
+    font: var(--raleway-30b);
+    &--painted {
+      color: var(--tetriary-color);
+    }
+  }
+}
+
+.btn {
+  width: 268px;
+  height: 60px;
+  color: #fff;
+  text-align: center;
+  border-radius: 11px;
+
+  &::before {
+    position: absolute;
+  }
+}
+
+.btn--primary {
+  position: relative;
+  padding-left: 35px;
+  font: var(--raleway-22b);
+  text-align: center;
+  background: linear-gradient(99.87deg, #13bae9 9.63%, #00addd 76.55%);
+  box-shadow: 0px 11px 22px rgba(0, 173, 221, 0.26);
+
+  &::before {
+    position: absolute;
+    top: 19px;
+    display: block;
+    width: 24px;
+    height: 24px;
+    background: url("../images/arrow_right.webp") no-repeat center/cover;
+    content: "";
+  }
 }

@@ -1,0 +1,16 @@
+//- Upload Raster graphics images
+//- If type of images jpg write source jpg else png
+mixin picture(name,className,isJPG,altTXT)
+  picture
+    source(class=className, srcset=imgURL + name + ".webp" type="image/webp")
+
+    if isJPG
+      source(srcset=imgURL + name + ".jpg" type="image/jpeg")
+      img(class=className, src=imgURL + name + ".jpg", alt=altTXT, title=altTXT)
+    else 
+      source(srcset=imgURL + name + ".png" type="image/png")
+      img(class=className, src=imgURL + name + ".png", alt=altTXT, title=altTXT)
+
+//- Upload Vector graphics images
+mixin imgSVG(name,className, altTXT)
+  img.logo-img(class=className, src=imgURL + name + ".svg", alt=altTXT, title=altTXT)

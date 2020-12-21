@@ -1,8 +1,8 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe C:\scoop\apps\yarn\current\Yarn\bin\yarn.js add url:.
+  C:\Program Files\nodejs\node.exe C:\scoop\apps\yarn\current\Yarn\bin\yarn.js add glide-core.css
 
 PATH: 
-  C:\Users\User\AppData\Roaming\npm\node_modules\npm\node_modules\npm-lifecycle\node-gyp-bin;C:\Users\User\Documents\Portfolio\Parcel-starterkit\node_modules\.bin;C:\Program Files (x86)\VMware\VMware Player\bin\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\ProgramData\chocolatey\bin;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Users\User\Downloads\Programs\OpenServer\modules\php\PHP_7.4;C:\ProgramData\ComposerSetup\bin;C:\scoop\apps\yarn\current\global\node_modules\.bin;C:\scoop\apps\yarn\current\Yarn\bin;C:\scoop\shims;C:\Ruby27-x64\bin;C:\Users\User\.windows-build-tools\python27\;C:\Users\User\.windows-build-tools\python27\;C:\Users\User\.windows-build-tools\python27\;C:\Users\User\AppData\Local\Programs\Python\Python38-32\Scripts\;C:\Users\User\AppData\Local\Programs\Python\Python38-32\;C:\Users\User\AppData\Local\Microsoft\WindowsApps;C:\Users\User\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\User\AppData\Local\Programs\Fiddler;C:\Users\User\AppData\Roaming\npm;C:\Users\User\AppData\Local\GitHubDesktop\bin;C:\Users\User\AppData\Local\Microsoft\WindowsApps;C:\Users\User\AppData\Roaming\Composer\vendor\bin;"C:\Program Files\Git\bin\git.exe;";C:\Program Files\Git\cmd
+  C:\Users\User\AppData\Roaming\npm\node_modules\npm\node_modules\npm-lifecycle\node-gyp-bin;C:\Users\User\Documents\Portfolio\Parcel-starterkit\node_modules\.bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\User\bin;C:\Program Files (x86)\VMware\VMware Player\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\ProgramData\chocolatey\bin;C:\Program Files\nodejs;C:\Program Files\Git\cmd;C:\Users\User\Downloads\Programs\OpenServer\modules\php\PHP_7.4;C:\ProgramData\ComposerSetup\bin;C:\scoop\persist\yarn\global\node_modules\.bin;C:\scoop\apps\yarn\current\Yarn\bin;C:\scoop\shims;C:\Ruby27-x64\bin;C:\Users\User\.windows-build-tools\python27;C:\Users\User\.windows-build-tools\python27;C:\Users\User\.windows-build-tools\python27;C:\Users\User\AppData\Local\Programs\Python\Python38-32\Scripts;C:\Users\User\AppData\Local\Programs\Python\Python38-32;C:\Users\User\AppData\Local\Microsoft\WindowsApps;C:\Users\User\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\User\AppData\Local\Programs\Fiddler;C:\Users\User\AppData\Roaming\npm;C:\Users\User\AppData\Local\GitHubDesktop\bin;C:\Users\User\AppData\Local\Microsoft\WindowsApps;C:\Users\User\AppData\Roaming\Composer\vendor\bin;C:\Program Files\Git\usr\bin\git.ex;.;C:\Program Files\Git\cmd
 
 Yarn version: 
   1.22.5
@@ -14,44 +14,99 @@ Platform:
   win32 x64
 
 Trace: 
-  Error: url:.: Invalid protocol: url:
-      at Request.module.exports.Request.init (C:\scoop\apps\yarn\1.22.5\Yarn\lib\cli.js:141018:31)
-      at new Request (C:\scoop\apps\yarn\1.22.5\Yarn\lib\cli.js:140691:8)
-      at request (C:\scoop\apps\yarn\1.22.5\Yarn\lib\cli.js:137597:10)
-      at RequestManager.execute (C:\scoop\apps\yarn\1.22.5\Yarn\lib\cli.js:66149:15)
-      at RequestManager.shiftQueue (C:\scoop\apps\yarn\1.22.5\Yarn\lib\cli.js:66187:10)
-      at C:\scoop\apps\yarn\1.22.5\Yarn\lib\cli.js:65856:13
-      at new Promise (<anonymous>)
-      at new F (C:\scoop\apps\yarn\1.22.5\Yarn\lib\cli.js:5301:28)
-      at RequestManager.request (C:\scoop\apps\yarn\1.22.5\Yarn\lib\cli.js:65854:19)
-      at NpmRegistry.<anonymous> (C:\scoop\apps\yarn\1.22.5\Yarn\lib\cli.js:31704:42)
+  Error: https://registry.npmjs.org/glide-core.css: Not found
+      at Request.params.callback [as _callback] (C:\scoop\apps\yarn\1.22.5\Yarn\lib\cli.js:66097:18)
+      at Request.self.callback (C:\scoop\apps\yarn\1.22.5\Yarn\lib\cli.js:140749:22)
+      at Request.emit (events.js:197:13)
+      at Request.<anonymous> (C:\scoop\apps\yarn\1.22.5\Yarn\lib\cli.js:141721:10)
+      at Request.emit (events.js:197:13)
+      at IncomingMessage.<anonymous> (C:\scoop\apps\yarn\1.22.5\Yarn\lib\cli.js:141643:12)
+      at Object.onceWrapper (events.js:285:13)
+      at IncomingMessage.emit (events.js:202:15)
+      at endReadableNT (_stream_readable.js:1129:12)
+      at processTicksAndRejections (internal/process/next_tick.js:76:17)
 
 npm manifest: 
   {
     "name": "tailwind-parcel",
     "version": "1.0.0",
     "description": "Sample boilerplate with tailwindcss and parceljs aimed for speedy webpage development.",
-    "main": "index.js",
+    "keywords": [
+      "prettier"
+    ],
+    "main": "src/scripts/index.js",
     "author": "Imam Susanto",
     "license": "MIT",
     "private": true,
     "devDependencies": {
       "cssnano": "^4.1.10",
+      "husky": "^4.3.5",
+      "lint-staged": "^10.5.3",
+      "parcel-plugin-custom-dist-structure": "^1.1.16",
+      "postcss": "^7.0.35",
       "postcss-import": "^12.0.0",
+      "postcss-modules": "^3.2.2",
       "postcss-nested": "^4.2.3",
       "postcss-preset-env": "^6.7.0",
       "postcss-purgecss": "^2.0.3",
-      "pug": "^3.0.0"
+      "postcss-url": "^9.0.0",
+      "prettier": "^2.2.1",
+      "pug": "^3.0.0",
+      "stylelint": "^13.8.0",
+      "stylelint-config-airbnb": "0.0.0",
+      "stylelint-config-idiomatic-order": "^8.1.0",
+      "stylelint-config-prettier": "^8.0.2",
+      "stylelint-config-rational-order": "^0.1.2",
+      "stylelint-declaration-block-no-ignored-properties": "^2.3.0",
+      "stylelint-order": "^4.1.0",
+      "stylelint-prettier": "^1.1.2",
+      "stylelint-scss": "^3.18.0"
     },
     "scripts": {
-      "dev": "parcel serve src/markup/index.pug",
-      "prod": "parcel build src/markup/index.pug",
-      "build:css": "tailwind build ./src/styles/style.css -o ./dist/style.css"
+      "dev": "rimraf dist & parcel serve src/markup/index.pug",
+      "prod": "rimraf dist & parcel build src/markup/index.pug",
+      "build:css": "tailwind build src/styles/styles.css -o dist/style.css",
+      "cwebp": "imagemin src/images/*{'.jpg','.png'} -p.webp.quality=70 -o src/images",
+      "stylelint": "stylelint src/styles/*.css",
+      "stylelint:fix": "stylelint src/styles/*.css --fix"
     },
     "dependencies": {
       "autoprefixer": "^9.8.6",
-      "postcss": "^7.0.35",
+      "imagemin": "^7.0.1",
+      "imagemin-webp": "^6.0.0",
+      "parcel-bundler": "^1.12.4",
       "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.1"
+    },
+    "customDistStructure": {
+      "config": {
+        ".css": "css",
+        ".js": "js",
+        "fonts": [
+          ".eot",
+          ".ttf",
+          ".woff",
+          ".woff2"
+        ],
+        "images": [
+          ".jpg",
+          ".svg",
+          ".png",
+          ".webp"
+        ]
+      },
+      "options": {
+        "development": true
+      }
+    },
+    "husky": {
+      "hooks": {
+        "pre-commit": "lint-staged"
+      }
+    },
+    "lint-staged": {
+      "*.css": [
+        "stylelint --fix"
+      ]
     }
   }
 

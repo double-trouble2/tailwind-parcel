@@ -1,0 +1,23 @@
+.partners {
+  margin-bottom: var(--section-indent);
+
+  .page-section__title {
+    margin-bottom: 36px;
+  }
+}
+.partners-list {
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  &__img {
+    width: auto;
+    height: 40px;
+  }
+  &__name {
+    color: #9faac6;
+    font: var(--raleway-22b);
+    text-align: left;
+  }
+}

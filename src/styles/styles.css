@@ -1,0 +1,43 @@
+@tailwind base;
+
+/* @tailwind components; */
+
+/* @tailwind utilities; */
+
+/* Import Glide slider */
+
+@import "./glide-core.css";
+@import "./glide-theme.css";
+@import "./fonts.css";
+@import "./main.css";
+@import "./header.css";
+@import "./partners.css";
+@import "./features.css";
+@import "./guide.css";
+@import "./mobileApp.css";
+@import "./telegramBot.css";
+@import "./price.css";
+@import "./supports.css";
+@import "./promo.css";
+@import "./news.css";
+@import "./map.css";
+@import "./footer.css";
+@import "./mediaQueries.css";
+@import "./forIE.css";
+
+a:focus,
+a:active,
+a:hover,
+button:focus,
+button:active,
+button:hover,
+input:focus,
+input:active,
+input:hover,
+textarea:focus,
+textarea:active,
+textarea:hover {
+  outline: none;
+  outline: none;
+  -webkit-appearance: none;
+}

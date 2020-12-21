@@ -1,1 +1,52 @@
-header.p-4
+//- Page header
+header.header
+  .container
+    .header-top 
+      .logo
+        +imgSVG("logo","logo__img","Lavina Tech LTD") 
+
+      //- Menu
+      nav.menu
+        ul.nav
+          +nav("Преимущества","#",)
+          +nav("Тарифы","#",)
+          +nav("Инструкция","#",)
+          +nav("Приложение","#",)
+          +nav("Новости","#",)
+
+      .logo-desc 
+        | Официальный оператор <br />
+        | электронного документооборота <br />
+        | Государственного налогового комитета <br />
+        | Республики Узбекистан
+      .company-info
+        .address
+          span г.Ташкент, Мирабадский р-н <br />
+          span ул. Афрасияб 21-60
+
+        .phone-number 
+          span(itemprop="telephone")
+            a(href="tel:+998712000881") +998 71 200 08 81 <br />
+          span(itemprop="telephone")
+            a(href="tel:+998913588881") +998 91 358 88 81
+
+      //- Mobile menu
+      .mobile-menu
+        ul.mobile-nav
+          +mobile-nav("Преимущества","--features","#")
+          +mobile-nav("Тарифы","--price","#")
+          +mobile-nav("Инструкция","--manual","#")
+          +mobile-nav("Приложение","--download","#")
+          +mobile-nav("Контакты","--map","#")
+
+    //- Header content
+  main.header-main.headerContent
+    .header-main-left
+      //- +picture("notebook","headerContent__image",false, "L-factura")
+      //- img(src=imgURL + "notebook.jpg" alt="L-factura", srcset= imgURL + "map-pin.svg")
+    .header-main-right
+      h1.headerContent__title Удобно Быстро Доступно
+      p.headerContent__desc 
+        | Мы сделали этот сервис максимально удобным для Вас, чтобы вы могли уделять больше времени и внимания на более важные дела. <br />
+        | Пользуйтесь сервисом L-Factura без регистрации и SMS уже сейчас. 
+      button.headerContent__btn.btn.btn--primary Начать работу

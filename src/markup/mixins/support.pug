@@ -1,0 +1,6 @@
+//- Support simple item.
+mixin support(name,desc)
+  .supports-list__item.support(class!=attributes.class)
+    .support__header
+      h3.support__title= name 
+    p.support__desc= desc

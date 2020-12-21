@@ -1,2 +1,17 @@
-footer
-  
+footer.footer
+  .container
+    .footer-wrap
+      .logo.logo--medium
+        +imgSVG("logo", "logo__img", "Lavina Tech LTD")
+      .address.adress--black
+        span г.Ташкент, Мирабадский р-н <br />
+        span ул. Афрасияб 21-60
+      .phone-number.phone-number--black
+        span(itemprop="telephone")
+          a(href="tel:+998712000881") +998 71 200 08 81<br />
+        span(itemprop="telephone")
+          a(href="tel:+998 913588881") +998 91 358 88 81
+      a(href="mailto:info@lavina.tech").email info@lavina.tech
+      .public-offer 
+        span OOO LAVINA TECH <br />
+        a.public-offer__link(href="https://l-factura.uz/oferta/") Публичная оферта

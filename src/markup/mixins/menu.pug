@@ -1,0 +1,9 @@
+//- Menu
+mixin nav(name, link, classNameLink="")
+  li.nav__item
+    a.nav__link(href=link, class=classNameLink)= name
+
+//- Mobile menu
+mixin mobile-nav(name, link, mod, classNameLink="")
+  li.mobile-nav__item(class="mobile-nav__item" + mod)
+    a.mobile-nav__link(href=link,class=classNameLink)= name

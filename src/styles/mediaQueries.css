@@ -1,0 +1,57 @@
+/* FullHD 1080p */
+@media (width <= 1920px) {
+}
+
+/* HD 720p */
+@media (width <= 1366px) {
+  /* Rectangle in header */
+  body {
+    padding: 0;
+  }
+  .main:before {
+    left: 42%;
+  }
+  .wrap {
+    width: 100%;
+    border: 0;
+    border-radius: 0;
+  }
+  .promo {
+    border-radius: 0;
+  }
+}
+
+/* Small viewport */
+@media (width >= 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+/* Medium viewport */
+@media (width >= 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+/* Large viewport */
+@media (width >= 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+/* ExtraLarge viewport */
+@media (width >= 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+/* 2ExtraLarge viewport */
+@media (width >= 1536px) {
+  .container {
+    max-width: 1340px;
+  }
+}

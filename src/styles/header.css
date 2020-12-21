@@ -1,0 +1,144 @@
+/* Header */
+.header {
+  position: relative;
+  padding-top: 50px;
+}
+
+/* Header top */
+.header-top {
+  display: grid;
+  grid-template-areas:
+    "logo menu"
+    "desc company_info";
+  align-items: center;
+  margin-bottom: 35px;
+  row-gap: 45px;
+}
+
+/* Logo */
+.logo {
+  grid-area: logo;
+  & __img {
+    width: 233px;
+    height: 56px;
+  }
+}
+
+/* Desktop Menu */
+.menu {
+  grid-area: menu;
+  grid-column: menu-start/menu-end;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  width: 660px;
+  margin-left: auto;
+  &__link {
+    color: #393939;
+    font: var(--raleway-18m-l21);
+    &:hover {
+      color: var(--main-color);
+    }
+    &--active {
+      color: var(--main-color);
+    }
+  }
+}
+
+/* Logo description */
+.logo-desc {
+  grid-area: desc;
+  color: var(--secondary-color);
+  font: var(--raleway-18r);
+  opacity: 0.7;
+}
+.company-info {
+  display: flex;
+  grid-area: company_info;
+  justify-content: space-between;
+  max-width: 500px;
+  margin-left: auto;
+}
+.address,
+.phone-number,
+.email {
+  position: relative;
+  padding-left: 40px;
+  color: var(--secondary-color);
+  font: var(--raleway-18l);
+  font-feature-settings: "pnum" on, "lnum" on;
+  &::before {
+    position: absolute;
+    top: 12px;
+    left: 0;
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: url("../images/sprites/contact_sprites.webp") no-repeat
+      center/cover;
+    content: "";
+  }
+}
+
+/* Adress */
+.address {
+  text-align: left;
+}
+
+/* Phone numbers */
+.phone-number {
+  margin-left: 30px;
+  text-align: right;
+
+  &::before {
+    background-position-x: -58px;
+  }
+}
+
+/* Mobile menu */
+.mobile-menu {
+  display: none;
+}
+.header-main {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+.header-main-left {
+  display: block;
+  width: 800px;
+  height: 645px;
+  background-image: url("../images/notebook.webp");
+  background-repeat: no-repeat;
+  background-position-x: -30px;
+  background-size: cover;
+}
+.header-main-right {
+  width: 482px;
+  margin-top: 65px;
+}
+.headerContent {
+  margin-bottom: 15px;
+  &__title {
+    margin-bottom: 42px;
+    color: #393939;
+    font: var(--raleway-35b);
+  }
+  &__desc {
+    margin-bottom: 39px;
+    color: #67717b;
+    font: var(--raleway-18m-l30);
+    opacity: 0.9;
+  }
+}
+.partners {
+  .page-section__title {
+    margin-bottom: 56px;
+  }
+}
+.partners-list {
+  &_img {
+    margin-right: 20px;
+  }
+}

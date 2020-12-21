@@ -1,0 +1,37 @@
+.telegram-bot {
+  margin-bottom: 175px;
+
+  &__wrap {
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 55px;
+  }
+  &__title {
+    margin-bottom: 48px;
+    color: var(--dark-color);
+    font: var(--raleway-30b);
+  }
+  &__desc {
+    margin-bottom: 40px;
+    color: var(-dark-color-2);
+    font: var(--raleway-18r-l30);
+    opacity: 0.9;
+  }
+  &__side-left {
+    order: 2;
+    width: 480px;
+    padding-right: 5px;
+  }
+
+  &__side-right {
+    order: 1;
+  }
+  &__image {
+    width: 523px;
+    min-width: 523px;
+    height: 613px;
+    min-height: 613px;
+  }
+}

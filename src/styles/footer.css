@@ -1,0 +1,32 @@
+.footer {
+  margin-bottom: 40px;
+}
+.footer-wrap {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--dark-color-2);
+  font: var(--raleway-18l);
+}
+.email {
+  align-self: flex-start;
+  &::before {
+    top: 0;
+    background-position: 0px -2px;
+  }
+}
+.public-offer {
+  align-self: flex-start;
+  &__link {
+    text-decoration: underline;
+  }
+}
+.guide-card {
+  width: 355px;
+  height: 500px;
+  background: #f5f6f8;
+  border: 9px solid #ffffff;
+  border-radius: 55px;
+  box-shadow: 0px 10px 33px rgba(0, 0, 0, 0.07);
+}

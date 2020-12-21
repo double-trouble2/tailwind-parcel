@@ -1,0 +1,7 @@
+//- Guide simple step
+//- imageClass is 
+mixin guide-card(title, classGuideStep, imageName,altText)
+  .guide-cards__item.guide-card(class=classGuideStep)
+    +picture(imageName, ["guide-card__img",attributes.class], true, altText)
+    //- img(src=imgURL + name + ".webp", alt=imageClass, srcset="").guide-card__img(class!=attributes.class)
+    h3.guide-card__title= title

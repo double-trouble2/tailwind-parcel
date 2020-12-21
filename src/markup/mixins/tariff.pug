@@ -1,0 +1,13 @@
+//- Simple Tariff plan
+mixin tariff(name,cost,sending_cost,btn_val)
+  .price-list__item.tariff
+    header.tariff__header
+      h3.tariff__name= name
+    span.tariff__cost #{cost} сум/мес
+    button.btn.btn-outline.tariff__btn= btn_val
+    p.tariff__option Входящие документы бесплатны
+    p.tariff__option Стоимость отправки  <span class="">#{sending_cost} сум/док</span>
+    p.tariff__option Интеграция с другими приложениями
+    p.tariff__option Скидка  15% на все услуги <a class="tariff__lavina-link" href="#" target="_blank">Lavina Tech</a>
+
+

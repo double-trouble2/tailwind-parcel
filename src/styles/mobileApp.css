@@ -1,0 +1,48 @@
+.mobile-app {
+  position: relative;
+  margin-bottom: 92px;
+  padding-bottom: 83px;
+
+  &__background {
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    clip-path: polygon(0 100%, 100% 100%, 100% 9%, 0px 0px);
+  }
+
+  &__wrap {
+    position: relative;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 55px;
+  }
+  &__title {
+    margin-bottom: 48px;
+    color: var(--dark-color);
+    font: var(--raleway-30b);
+  }
+  &__desc {
+    margin-bottom: 40px;
+    color: var(-dark-color-2);
+    font: var(--raleway-18r-l30);
+    opacity: 0.9;
+  }
+  &__side-left {
+    width: 480px;
+    padding-right: 5px;
+  }
+
+  /* &__side-right {
+    
+  } */
+  &__image {
+    width: 523px;
+    min-width: 523px;
+    height: 613px;
+    min-height: 613px;
+  }
+}

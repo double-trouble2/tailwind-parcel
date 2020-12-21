@@ -14,15 +14,17 @@ module.exports = {
     require('tailwindcss')('./tailwind.config.js'),
     process.env.NODE_ENV === 'production'
       ? require('postcss-purgecss')({
-          content: ['./index.html'],
+          content: ['./src/**/*.pug'],
+          safelist: ['/.container/','/.main/', /^nav-/],
           extractors: [
             {
-              extractor: TailwindExtractor,
+              extractor: new TailwindExtractor,
               extensions: ["html", "js"]
             }
           ]
         })
       : function() {
+
         return []
       }
   ]

@@ -1,0 +1,113 @@
+.price {
+  margin-bottom: var(--section-mini-indent);
+
+  .page-section__title {
+    margin-bottom: 80px;
+    text-align: center;
+  }
+}
+.price-wrap {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: start;
+  justify-content: center;
+}
+
+.tariff-options {
+  width: 400px;
+  margin-top: 140px;
+  color: var(--dark-color-2);
+  text-align: center;
+  background: #ffffff;
+  border-top-left-radius: 33px;
+  border-bottom-left-radius: 33px;
+  &__item {
+    height: 85px;
+    padding-top: 35px;
+    font: var(--raleway-15m);
+    border: 1px solid #d2dde6;
+  }
+  &__item:first-child {
+    border-top-left-radius: 33px;
+  }
+  &__item:last-child {
+    border-bottom-left-radius: 33px;
+  }
+}
+
+.tariff {
+  width: 400px;
+  color: var(--dark-color-2);
+  text-align: center;
+  font-feature-settings: "pnum" on, "lnum" on;
+  &__header {
+    height: 140px;
+    padding: 16px 0 39px;
+    color: #fff;
+    background-color: #0db7e7;
+    border-top-left-radius: 33px;
+  }
+  &__name {
+    font: var(--raleway-18sb-l55);
+  }
+  &__cost-val {
+    font: var(--raleway-30b);
+  }
+  &__cost {
+    font: var(--raleway-21l);
+  }
+  &__header--premium {
+    position: relative;
+    overflow: hidden;
+    background-color: var(--main-color);
+    border-top-left-radius: 0;
+    border-top-right-radius: 33px;
+    &::before {
+      position: absolute;
+      top: 11px;
+      left: -30px;
+      display: block;
+      width: 120px;
+      height: 30px;
+      font: var(--roboto-15m);
+      text-align: center;
+      background-color: #0974eb;
+      transform: rotate(-45deg);
+      content: "NEW";
+    }
+  }
+  &__option {
+    height: 85px;
+    padding-top: 35px;
+    font: var(--raleway-15m);
+    background-color: #fff;
+    border: 1px solid #d2dde6;
+    border-top: 0;
+  }
+  &__includes {
+    &::before {
+      display: inline-block;
+      width: 25px;
+      height: 25px;
+      margin-right: 0.3em;
+      padding-top: 5px;
+      color: var(--main-color);
+      line-height: 1em;
+      text-align: center;
+      border: 1px solid var(--main-color);
+      border-radius: 50%;
+      opacity: 0.2;
+      content: "✖";
+    }
+    &--active::before {
+      opacity: 1;
+      content: "✔";
+    }
+  }
+  &__option--last-left {
+    border-bottom-left-radius: 33px;
+  }
+  &__option--last-right {
+    border-bottom-right-radius: 33px;
+  }
+}

@@ -1,0 +1,29 @@
+/* Adress & Phone number icons no-support webp */
+.no-webp .address,
+.no-webp .phone-number {
+  &::before {
+    background: url("../images/sprites/contact_sprites.png") no-repeat
+      center/cover;
+  }
+}
+.no-webp .phone-number {
+  &::before {
+    background-position-x: -40px;
+  }
+}
+.no-webp .header-main-left {
+  background-image: url("../images/notebook.png");
+}
+.no-webp .headerContent__btn {
+  &:before {
+    background-image: url("../images/arrow_right.png");
+  }
+}
+.no-webp .address,
+.no-webp .phone-number,
+.no-webp .email {
+  &::before {
+    background: url("../images/sprites/contact_sprites.png") no-repeat
+      center/cover;
+  }
+}

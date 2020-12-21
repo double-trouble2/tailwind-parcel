@@ -1,0 +1,36 @@
+.news {
+  margin-bottom: var(--section-indent);
+
+  .page-section__title {
+    margin-bottom: 80px;
+    text-align: center;
+  }
+  &__img {
+    margin-bottom: 30px;
+    border-radius: 33px;
+  }
+  &__title {
+    margin-bottom: 25px;
+    color: var(--tetriary-color);
+    font: var(--raleway-18sb-l16);
+  }
+  &__desc {
+    margin-bottom: 13px;
+    color: var(--dark-color-2);
+    font: var(--raleway-14l);
+  }
+  &__data {
+    margin-bottom: 55px;
+    color: var(--dark-color-2);
+    font: var(--raleway-14l);
+  }
+  .glide__track {
+    margin-bottom: 80px;
+  }
+}
+
+.glide__bullet {
+  width: 16px;
+  height: 16px;
+  background: rgba(89, 163, 245, 0.2);
+}
