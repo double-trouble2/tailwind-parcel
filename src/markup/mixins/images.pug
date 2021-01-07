@@ -6,11 +6,11 @@ mixin picture(name,className,isJPG,altTXT)
 
     if isJPG
       source(srcset=imgURL + name + ".jpg" type="image/jpeg")
-      img(class=className, src=imgURL + name + ".jpg", alt=altTXT, title=altTXT)
+      img(class=className, src=imgURL + name + ".jpg", alt=altTXT, loading="lazy", title=altTXT)
     else 
       source(srcset=imgURL + name + ".png" type="image/png")
-      img(class=className, src=imgURL + name + ".png", alt=altTXT, title=altTXT)
+      img(class=className, src=imgURL + name + ".png", alt=altTXT, loading="lazy", title=altTXT)
 
 //- Upload Vector graphics images
 mixin imgSVG(name,className, altTXT)
-  img.logo-img(class=className, src=imgURL + name + ".svg", alt=altTXT, title=altTXT)
+  img.logo-img(class=className, src=imgURL + name + ".svg", alt=altTXT, loading="lazy", title=altTXT)

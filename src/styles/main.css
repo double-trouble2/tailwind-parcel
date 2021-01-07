@@ -7,13 +7,15 @@
   --dark-color: #393939;
   --dark-color-2: #67717b;
   --promo-bg-color: #f0f8ff;
+  --partner-logo-color: #b9c3dc;
+  --tariff-options-color: #3c5f86;
 
   /* Indents */
   --section-indent: 160px;
   --section-mini-indent: 88px;
 
   /* Fonts for main Title */
-  --raleway-35b: normal 600 35px/41px "Raleway", sans-serif;
+  --raleway-35b: normal 700 35px/41px "Raleway", sans-serif;
   --raleway-30b: normal 600 30px/49px "Raleway", sans-serif;
   --raleway-18m-l26: normal 500 18px/26px "Raleway", sans-serif; /* Fonts for H3 title */
   --raleway-30b: normal 700 30px/35px "Raleway", sans-serif;
@@ -44,15 +46,16 @@
   --overpass-24l: normal 700 16px/24px "Overpass", sans-serif;
   --overpass-16l: normal 300 16px/24px "Overpass", sans-serif;
   --raleway-15m: normal 500 15px/18px "Raleway", sans-serif;
+  --raleway-16b: normal 700 16px/19px "Raleway", sans-serif;
   --raleway-18sb-l55: normal 600 18px/55px "Raleway", sans-serif;
   --raleway-18sb-l16: normal 600 18px/16px "Raleway", sans-serif;
   --roboto-15m: normal 500 15px/2 "Roboto", sans-serif;
+  --montserrat-14r: normal 400 14px/1.2 "Montserrat", sans-serif;
 
   /* --montserrat-12m: normal 500 12px/1.5 'Montserrat', sans-serif;
   --montserrat-13l: normal 300 13px/1.5 'Montserrat', sans-serif;
   --montserrat-13b: normal 600 13px/1.5 'Montserrat', sans-serif;
   --montserrat-14l: normal 300 14px/1.6 'Montserrat', sans-serif;
-  --montserrat-14r: normal 400 14px/23px 'Montserrat', sans-serif;
   --montserrat-14m: normal 500 14px/1.64 'Montserrat', sans-serif;
   --montserrat-14sb: normal 600 14px/17px 'Montserrat', sans-serif;
   --montserrat-15m2: normal 500 15px/1.5 'Montserrat', sans-serif;
@@ -161,6 +164,14 @@ body {
   &::before {
     position: absolute;
   }
+  &:hover {
+    width: 270px;
+    height: 62px;
+  }
+}
+.btn:hover::before {
+  width: 26px;
+  height: 26px;
 }
 
 .btn--primary {
@@ -181,3 +192,15 @@ body {
     content: "";
   }
 }
+.btn-outline {
+  color: var(--main-color);
+  font-weight: 600;
+  border: 1px solid var(--main-color);
+}
+.hidden {
+  display: none;
+}
+
+/* .map {
+  display: none;
+} */

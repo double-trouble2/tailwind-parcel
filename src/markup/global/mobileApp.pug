@@ -1,12 +1,25 @@
-section.mobile-app.page-section
+section#mobile-app.mobile-app.page-section
   .mobile-app__background
   .container
     .mobile-app__wrap 
       .mobile-app__side-left 
-        h2.mobile-app__title Удобно Быстро Доступно
+        h2.mobile-app__title Качайте также наше приложение
         p.mobile-app__desc.
-          Мы сделали этот сервис максимально удобным для Вас, чтобы вы могли уделять больше времени и внимания на более важные дела. 
-          Пользуйтесь сервисом L-Factura без регистрации и SMS уже сейчас. 
-        button.btn.btn--primary Установить
+          В нашем мобильном приложении, ваши докумены всегда будут под рукой. Получайте уведомления о новых документах и подписывайте их на ходу!
+        button.btn.btn--primary 
+          a(href="https://play.google.com/store/apps/details?id=com.lavinauz.lfactura").mobile-app__link Установить
       .mobile-app__side-right
         +picture('mobile-app','mobile-app__image', false, 'L-factura, мобильное приложения', "L-factura, мобильное приложения")
+      h2.page-section__title  Мобильное <span class="page-section__title--painted">приложение</span>
+
+      ul.mobileApp-list 
+        li.mobileApp-list__item.
+          Уведомления о поступивших 
+          документах
+        li.mobileApp-list__item.
+          Подпись, отказ или отмена 
+          документов
+        li.mobileApp-list__item.
+          Просмотр документа
+      button.mobile-app__btn.btn.btn--primary 
+        a(href="https://play.google.com/store/apps/details?id=com.lavinauz.lfactura").mobile-app__link Установить

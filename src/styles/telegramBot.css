@@ -22,6 +22,7 @@
   &__side-left {
     order: 2;
     width: 480px;
+    height: 335px;
     padding-right: 5px;
   }
 
@@ -34,4 +35,11 @@
     height: 613px;
     min-height: 613px;
   }
+}
+.telegram-bot .page-section__title,
+.telegramBot-list {
+  display: none;
+}
+.telegram-bot__btn {
+  display: none;
 }

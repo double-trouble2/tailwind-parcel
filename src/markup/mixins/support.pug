@@ -1,6 +1,7 @@
 //- Support simple item.
-mixin support(name,desc)
+mixin support(name,desc,link="#")
   .supports-list__item.support(class!=attributes.class)
     .support__header
-      h3.support__title= name 
+      h3.support__title
+        a(href=link)= name 
     p.support__desc= desc

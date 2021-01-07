@@ -1,4 +1,4 @@
-section.price.page-section
+section#price.price.page-section
   .container
     h2.page-section__title  Тарифные <span class="page-section__title--painted">планы</span>
     .price__list.price-wrap
@@ -20,7 +20,8 @@ section.price.page-section
         .tariff__option
           .tariff__includes 
         .tariff__option.tariff__option--last-left
-          button.btn.btn-outline.tariff__btn Начать
+          button.btn.btn-outline.tariff__btn 
+            a(href="https://l-factura.uz/app/") Начать
 
       .price-list__item.tariff
         .tariff__header.tariff__header--premium
@@ -33,4 +34,55 @@ section.price.page-section
         .tariff__option
           .tariff__includes.tariff__includes--active 
         .tariff__option.tariff__option--last-right
-          button.btn.btn-outline.tariff__btn Обновить мой план
+          button.btn.btn-outline.tariff__btn.tariff__btn--painted 
+            a(href="https://l-factura.uz/app/") Обновить мой план
+    
+    //- Price view in mobile
+    .tariffs-slider
+      .glide__track(data-glide-el='track')
+        .price-mobile-list.glide__slides
+          .tariff.glide__slide
+            header.tariff__header
+              h3.tariff__name Standart
+              span.tariff__cost-val 0 <span class="tariff__cost">сум/мес</span>
+            .tariff__content
+              ul.tariff-options  
+                li.tariff-options__item.tariff__includes.tariff__includes--active.
+                  Входящие документы 
+                  бесплатны
+                li.tariff-options__item.tariff__includes.tariff__includes--active.
+                  Стоимость отправки  
+                  <span class="tariff__sending-cost">249 сум/док</span>
+                li.tariff-options__item.tariff__includes.
+                  Интеграция с другими 
+                  приложениями
+                li.tariff-options__item.tariff__includes.
+                  Скидка  15% на все услуги 
+                  <a class="tariff__lavina-link" href="#" target="_blank">Lavina Tech</a>
+              button.btn.btn-outline.tariff__btn 
+                a(href="https://l-factura.uz/app/") Начать
+
+          .tariff.glide__slide
+            header.tariff__header.tariff__header--premium
+              h3.tariff__name Premium
+              span.tariff__cost-val 99 000 <span class="tariff__cost">сум/мес</span>
+            .tariff__content
+              ul.tariff-options  
+                li.tariff-options__item.tariff__includes.tariff__includes--active.
+                  Входящие документы 
+                  бесплатны
+                li.tariff-options__item.tariff__includes.tariff__includes--active.
+                  Стоимость отправки  
+                  <span class="tariff__sending-cost">199 сум/док</span>
+                li.tariff-options__item.tariff__includes.tariff__includes--active.
+                  Интеграция с другими 
+                  приложениями
+                li.tariff-options__item.tariff__includes.tariff__includes--active.
+                  Скидка  15% на все услуги 
+                  <a class="tariff__lavina-link" href="#" target="_blank">Lavina Tech</a>
+              button.btn.tariff__btn.tariff__btn--painted 
+                a(href="https://l-factura.uz/app/") Обновить мой план
+      
+      .glide__bullets(data-glide-el='controls[nav]')
+        button.glide__bullet(data-glide-dir='=0')
+        button.glide__bullet(data-glide-dir='=1')

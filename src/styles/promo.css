@@ -61,7 +61,7 @@
     height: 20px;
     background: url("../images/sprites/promo_sprites.png") no-repeat center /
       cover;
-    background-position-x: -75px;
+    background-position-x: -77px;
     background-size: 116px 60px;
     content: "";
   }
@@ -69,9 +69,17 @@
 .promo__btn--submit {
   width: 198px;
   height: 55px;
-}
 
+  &:hover {
+    width: 200px;
+    height: 57px;
+  }
+}
+.promo__btn--submit:hover::before {
+  top: 17px;
+}
 .promo__btn--down {
+  position: relative;
   width: 228px;
   height: 55px;
   color: var(--main-color);
@@ -80,4 +88,11 @@
   &::before {
     background-position-x: -17px;
   }
+  &:hover {
+    width: 230px;
+    height: 57px;
+  }
+}
+.promo__btn--down:hover::before {
+  top: 15px;
 }

@@ -8,12 +8,15 @@ header.header
       //- Menu
       nav.menu
         ul.nav
-          +nav("Преимущества","#",)
-          +nav("Тарифы","#",)
-          +nav("Инструкция","#",)
-          +nav("Приложение","#",)
-          +nav("Новости","#",)
+          +nav("Преимущества","#advantages",)
+          +nav("Тарифы","#price",)
+          +nav("Инструкция","#guide",)
+          +nav("Приложение","#mobile-app",)
+          +nav("Новости","#news",)
 
+      .main-site 
+        span Основной сайт <br />
+        a.main-site__link(href="http://lavina.tech/") Lavina.tech
       .logo-desc 
         | Официальный оператор <br />
         | электронного документооборота <br />
@@ -33,11 +36,12 @@ header.header
       //- Mobile menu
       .mobile-menu
         ul.mobile-nav
-          +mobile-nav("Преимущества","--features","#")
-          +mobile-nav("Тарифы","--price","#")
-          +mobile-nav("Инструкция","--manual","#")
-          +mobile-nav("Приложение","--download","#")
-          +mobile-nav("Контакты","--map","#")
+          +mobile-nav("Преимущества","#advantages","--features","")
+          +mobile-nav("Тарифы","#price","--price","")
+          +mobile-nav("Инструкция","#guide","--manual","")
+          +mobile-nav("Приложение","#mobile-app","--download","")
+          //- +mobile-nav("Адрес","#","--map","")
+          +mobile-nav("Новости","#news","--news","")
 
     //- Header content
   main.header-main.headerContent
@@ -49,4 +53,5 @@ header.header
       p.headerContent__desc 
         | Мы сделали этот сервис максимально удобным для Вас, чтобы вы могли уделять больше времени и внимания на более важные дела. <br />
         | Пользуйтесь сервисом L-Factura без регистрации и SMS уже сейчас. 
-      button.headerContent__btn.btn.btn--primary Начать работу
+      button.headerContent__btn.btn.btn--primary 
+        a(href="https://l-factura.uz/app/").headerContent__link Начать работу

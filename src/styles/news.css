@@ -1,4 +1,5 @@
 .news {
+  scroll-behavior: smooth;
   margin-bottom: var(--section-indent);
 
   .page-section__title {
@@ -15,6 +16,7 @@
     font: var(--raleway-18sb-l16);
   }
   &__desc {
+    width: 380px;
     margin-bottom: 13px;
     color: var(--dark-color-2);
     font: var(--raleway-14l);
@@ -27,10 +29,34 @@
   .glide__track {
     margin-bottom: 80px;
   }
+  &__item {
+    width: 380px;
+  }
 }
 
+.news-slider {
+  position: relative;
+}
+
+.glide__bullets {
+  bottom: -71px;
+}
 .glide__bullet {
   width: 16px;
   height: 16px;
   background: rgba(89, 163, 245, 0.2);
+  border: 0;
+  box-shadow: none;
+  &:hover {
+    background: rgba(89, 163, 245, 0.5);
+    border: 0;
+    box-shadow: none;
+  }
+}
+
+.glide__bullet--active,
+.glide__bullet:focus {
+  background: var(--tetriary-color);
+  border: 0;
+  box-shadow: none;
 }

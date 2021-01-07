@@ -1,24 +1,62 @@
 section.partners.page-section.glide
   .container
     h2.page-section__title  Мы <span class="page-section__title--painted">сотрудничаем</span>
-    .glide__track(data-glide-el='track')
-      ul.partners__list.partners-list.glide__slides
-        li.partners-list__item.glide__slide 
-          +picture("partner_1","partners-list__img", false, "partner_1")
-          span.partners-list__name LogiTech
-        li.partners-list__item.glide__slide      
-          +picture("partner_2","partners-list__img", false, "partner_2")
-          span.partners-list__name LogiTech
-        li.partners-list__item.glide__slide 
-          +picture("partner_3", "partners-list__img", false, "partner_3")
-          span.partners-list__name LogiTech
-        li.partners-list__item.glide__slide
-          +picture("partner_4", "partners-list__img", false, "partner_4")
-          span.partners-list__name LogiTech
-        li.partners-list__item.glide__slide
-          +picture("partner_5", "partners-list__img", false, "partner_5")
-          span.partners-list__name LogiTech
-        li.partners-list__item.glide__slide
-          +picture("partner_6", "partners-list__img", false, "partner_6")
-          span.partners-list__name LogiTech
+    .partners-carousel
+      .glide__track(data-glide-el='track')
+        ul.partners__list.partners-list.glide__slides
 
+          li.partners-list__item.glide__slide
+            svg.biznes_aziya.partner_logo.partner_logo--biznes_aziya(aria-hidden='true')
+              use(xlink:href='#biznes_aziya' href='#biznes_aziya')
+
+          li.partners-list__item.glide__slide
+            svg.apexpizza.partner_logo.partner_logo--apexpizza(aria-hidden='true')
+              use(xlink:href='#apexpizza' href='#apexpizza')
+
+          li.partners-list__item.glide__slide
+            svg.green_post.partner_logo.partner_logo--green_post(aria-hidden='true')
+              use(xlink:href='#green_post' href='#green_post')
+
+          li.partners-list__item.glide__slide 
+            svg.dgs.partner_logo.partner_logo--dgs(aria-hidden='true')
+              use(xlink:href='#dgs' href='#dgs')
+
+          li.partners-list__item.glide__slide
+            svg.agmk.partner_logo.partner_logo--agmk(aria-hidden='true')
+              use(xlink:href='#agmk' href='#agmk')
+
+          li.partners-list__item.glide__slide
+            svg.omega_alliance.partner_logo.partner_logo--omega_alliance(aria-hidden='true')
+              use(xlink:href='#omega_alliance' href='#omega_alliance')
+
+          li.partners-list__item.glide__slide
+            svg.bonito.partner_logo.partner_logo--bonito.bonito(aria-hidden='true')
+              use(xlink:href='#bonito' href='#bonito')
+
+    .partners-mobile 
+      ul.partners__list-mobile.partners-list-mobile
+        li.partners-list-mobile__item
+          svg.omega_alliance.partner_logo.partner_logo--omega_alliance(aria-hidden='true')
+            use(xlink:href='#omega_alliance' href='#omega_alliance')
+        
+        li.partners-list-mobile__item
+          svg.biznes_aziya.partner_logo.partner_logo--biznes_aziya(aria-hidden='true')
+            use(xlink:href='#biznes_aziya' href='#biznes_aziya')
+
+
+        li.partners-list-mobile__item
+          svg.green_post.partner_logo.partner_logo--green_post(aria-hidden='true')
+            use(xlink:href='#green_post' href='#green_post')
+
+        li.partners-list-mobile__item 
+          svg.dgs.partner_logo.partner_logo--dgs(aria-hidden='true')
+            use(xlink:href='#dgs' href='#dgs')
+
+        li.partners-list-mobile__item
+          svg.agmk.partner_logo.partner_logo--agmk(aria-hidden='true')
+            use(xlink:href='#agmk' href='#agmk')
+
+
+        li.partners-list-mobile__item
+          svg.apexpizza.partner_logo.partner_logo--apexpizza(aria-hidden='true')
+            use(xlink:href='#apexpizza' href='#apexpizza')

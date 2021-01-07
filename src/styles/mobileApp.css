@@ -1,4 +1,5 @@
 .mobile-app {
+  scroll-behavior: smooth;
   position: relative;
   margin-bottom: 92px;
   padding-bottom: 83px;
@@ -33,6 +34,7 @@
   }
   &__side-left {
     width: 480px;
+    height: 310px;
     padding-right: 5px;
   }
 
@@ -45,4 +47,11 @@
     height: 613px;
     min-height: 613px;
   }
+}
+.mobile-app .page-section__title,
+.mobileApp-list {
+  display: none;
+}
+.mobile-app__btn {
+  display: none;
 }

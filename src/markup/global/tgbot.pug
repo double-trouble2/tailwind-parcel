@@ -1,11 +1,26 @@
+a(name="telegram-bot")
 section.telegram-bot.page-section
   .container
     .telegram-bot__wrap 
       .telegram-bot__side-left 
-        h2.telegram-bot__title Удобно Быстро Доступно
+        h2.telegram-bot__title Уведомления в Telegram-bot
         p.telegram-bot__desc.
           Мы сделали этот сервис максимально удобным для Вас, чтобы вы могли уделять больше времени и внимания на более важные дела. 
           Пользуйтесь сервисом L-Factura без регистрации и SMS уже сейчас. 
-        button.btn.btn--primary Установить
+        button.btn.btn--primary 
+          a(href="javascript:void(window.open('https://t.me/lfactura_bot', '_blank'))").telegram-bot__link Подключить
       .telegram-bot__side-right
         +picture('telegrambot','telegram-bot__image', false, 'L-factura, мобильное приложения')
+      h2.page-section__title  Телеграм <span class="page-section__title--painted">бот</span>
+
+      ul.telegramBot-list 
+        li.telegramBot-list__item.
+          Уведомления о поступивших
+          документах
+        li.telegramBot-list__item.
+          Подпись, отказ или отмена 
+          документов
+        li.telegramBot-list__item.
+          Просмотр документа  
+      button.telegram-bot__btn.btn.btn--primary 
+        a(href="javascript:void(window.open('https://t.me/lfactura_bot', '_blank'))").telegram-bot__link Подключить

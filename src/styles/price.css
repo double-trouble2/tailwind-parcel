@@ -1,4 +1,5 @@
 .price {
+  scroll-behavior: smooth;
   margin-bottom: var(--section-mini-indent);
 
   .page-section__title {
@@ -110,4 +111,24 @@
   &__option--last-right {
     border-bottom-right-radius: 33px;
   }
+}
+.tariff__btn {
+  width: 203px;
+  height: 44px;
+  &:hover {
+    width: 205px;
+    height: 46px;
+  }
+}
+.tariff__option--last-left,
+.tariff__option--last-right {
+  padding-top: 20px;
+}
+.tariff__btn--painted {
+  color: white;
+  background: var(--main-color);
+}
+
+.tariffs-slider {
+  display: none;
 }

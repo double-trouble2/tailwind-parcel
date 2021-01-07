@@ -1,4 +1,5 @@
 .features {
+  scroll-behavior: smooth;
   margin-bottom: var(--section-indent);
 
   .page-section__title {

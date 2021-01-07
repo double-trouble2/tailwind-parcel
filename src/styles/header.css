@@ -15,6 +15,19 @@
   row-gap: 45px;
 }
 
+.main-site {
+  display: none;
+  grid-area: main_site;
+  width: 170px;
+  height: 40px;
+
+  &__link {
+    color: var(--tetriary-color);
+    font: var(--raleway-16b);
+    text-decoration: underline;
+  }
+}
+
 /* Logo */
 .logo {
   grid-area: logo;
@@ -60,6 +73,7 @@
   max-width: 500px;
   margin-left: auto;
 }
+.main-site,
 .address,
 .phone-number,
 .email {
@@ -104,6 +118,7 @@
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
+  padding: 0 21px;
 }
 .header-main-left {
   display: block;

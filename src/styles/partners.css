@@ -5,6 +5,9 @@
     margin-bottom: 36px;
   }
 }
+.partners-mobile {
+  display: none;
+}
 .partners-list {
   &__item {
     display: flex;
@@ -20,4 +23,88 @@
     font: var(--raleway-22b);
     text-align: left;
   }
+}
+
+.partner_logo {
+  height: 50px;
+  fill: var(--partner-logo-color);
+  --red: blue;
+  --yellow: yellow;
+
+  /* &--biznes_aziya {
+    width: 183px;
+  }
+  &--green_post {
+    width: 183px;
+  }
+  &--dgs {
+    width: 172px;
+  }
+  &--omega_alliance {
+    width: 291px;
+  }
+  &--bonito {
+    width: 107px;
+  }
+  &--agmk {
+    width: 112px;
+  }
+  &--apexpizza {
+    width: 88px;
+  } */
+}
+
+.biznes_aziya:hover {
+  --biz-aziya-blue: #2323c8;
+  --biz-aziya-txt-color: #5b5b5b;
+  --biz-aziya-gray: #c4c4c4;
+  --biz-aziya-red: #ff0000;
+}
+
+.green_post:hover {
+  --green-post: #21bf86;
+}
+
+.dgs:hover {
+  --dgs-gray: #404040;
+  --dgs-orange: #ef4838;
+}
+
+.omega_alliance:hover {
+  --omega-orange: #f37021;
+  --omega-gray: #444545;
+}
+
+.bonito {
+  --bonito-white: #f1f7ff;
+  --bonito-dark-blue: #b9c3dc;
+}
+
+.bonito:hover {
+  --bonito-white: #ffffff;
+  --bonito-light-blue: #003c62;
+  --bonito-red: #ff181a;
+  --bonito-orange: #ff8500;
+  --bonito-blue: #1f2b62;
+  --bonito-green: #00b140;
+  --bonito-dark-red: #a9133a;
+}
+
+.agmk {
+  --agmk-yellow: var(--partner-logo-color);
+  --agmk-gray: var(--partner-logo-color);
+}
+
+.agmk:hover {
+  --agmk-yellow: #ffc802;
+  --agmk-gray: #606060;
+}
+
+.apexpizza {
+  --apex-yellow: #b9c3dc;
+  --apex-black: #e5e5e5;
+}
+.apexpizza:hover {
+  --apex-yellow: #fdeb04;
+  --apex-black: #000000;
 }

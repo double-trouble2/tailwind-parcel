@@ -1,4 +1,5 @@
 .guide {
+  scroll-behavior: smooth;
   margin-bottom: 220px;
 
   .page-section__title {

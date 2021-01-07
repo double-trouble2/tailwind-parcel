@@ -1,0 +1,13 @@
+<svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="17.5" cy="17.5" r="17.5" fill="white"/>
+<path d="M11.5 11.9982L14.0358 9.5H23.2105C23.4867 9.5 23.7105 9.72386 23.7105 10V24.7333C23.7105 25.0095 23.4867 25.2333 23.2105 25.2333H12C11.7239 25.2333 11.5 25.0095 11.5 24.7333V11.9982Z" stroke="#B3E6F5"/>
+<rect width="6.16491" height="0.880702" rx="0.440351" transform="matrix(1 0 0 -1 15.4033 13.4035)" fill="#B3E6F5"/>
+<rect width="6.16491" height="0.880702" rx="0.440351" transform="matrix(1 0 0 -1 15.4033 15.1649)" fill="#B3E6F5"/>
+<rect width="5.28421" height="0.880702" rx="0.440351" transform="matrix(1 0 0 -1 15.4033 16.9263)" fill="#B3E6F5"/>
+<rect width="0.880702" height="0.880702" rx="0.440351" transform="matrix(1 0 0 -1 13.6416 13.4035)" fill="#B3E6F5"/>
+<rect width="0.880702" height="0.880702" rx="0.440351" transform="matrix(1 0 0 -1 13.6416 15.1649)" fill="#B3E6F5"/>
+<rect width="0.880702" height="0.880702" rx="0.440351" transform="matrix(1 0 0 -1 13.6416 16.9263)" fill="#B3E6F5"/>
+<circle cx="17.6049" cy="20.8895" r="2.58246" stroke="#B3E6F5"/>
+<path d="M17.6055 21.3298V23.5316" stroke="#B3E6F5" stroke-width="0.8"/>
+<circle cx="17.6054" cy="20.0088" r="0.440351" fill="#B3E6F5"/>
+</svg>
